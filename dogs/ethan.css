@@ -46,7 +46,7 @@ img{
     height: 400px;
 }
 
-a{
+a.t, a.desc{
     overflow: auto;
     text-decoration: none;
     background-color: black;
