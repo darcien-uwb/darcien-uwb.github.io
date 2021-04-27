@@ -35,18 +35,15 @@ table, tr, th, td {
     font-size: 30px;
 }
 
-
-
-
 .desc{
     display: block;
     text-align: center;
 }
 
 img{
+    margin-left: 10px;
     width: 400px;
     height: 400px;
-
 }
 
 a{
