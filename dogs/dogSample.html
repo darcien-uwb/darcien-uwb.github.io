@@ -4,6 +4,14 @@
     <head>
         <meta charset="utf-8">
         <title>Team 2: HTML page about dogs</title>
+        <link rel="stylesheet" href="css/ethan.css">
+
+        <style>
+          /*Ethan's Section*/
+          #eh4{
+              color: #ab5672
+          }
+      </style>
     </head>
 
     <body style="font-family:georgia;"> <!-- changed font for entire page [Darcie] -->
@@ -139,13 +147,13 @@
     <!-- end Cameron's Section -->
     
     <!--Mark's Comment: missing a closing bracket below...-->
-    <hr
+    <hr>
     <!--Cameron's Section-->    
     <hr> <!--using horizontal rules to separate sections [Cameron]-->
 
-    <!--Ethan's Section-->   
-  
-    <h4 style="color:rgb(171, 86, 114)"> Ethan's Section </h4>
+    <!--Ethan's Section-->  
+    <h2 id="eh4"> Ethan's Section </h2>
+    <a href="#desc" class="desc">Click Here for Dog</a>
     <p>I love dogs I could play with them forever.</p>
 
     <!--Div w/ unordered list-->   
@@ -154,14 +162,14 @@
             <li>They are cute</li>
             <li>They are loveable</li>
             <li>That's pretty much it</li><!--Mark's Comment: extra closing bracket below-->
-         </ul>>
+         </ul>
     </div>
 
     <p>Sadly I do not own any dogs so I play with my <em><strong>friends</strong></em> dogs.</p>
 
     <!--Div w/ ordered list-->   
     <div class="favDogs">
-        <h1>List of my <span style="color:rgb(171,86,114)"> favorite </span> type of dogs:</h1>
+        <h1>List of my <span> favorite </span> type of dogs:</h1>
         <ol>
             <li>Miniature American Shepherd</li>
             <li>Australian Shepherd</li>
@@ -170,30 +178,33 @@
     </div>
 
     <!--Creation of Table-->   
-    <h3>Cool dog names</h3>
-    <table style="width: 100%; border-collapse: collapse; width:fit-content;">
-        <tr style="border: 1px solid black padding; text-align: left;">
-            <th style = "border: 1px solid black;">Name</th>
+    <h3 style="font-weight: bold;">Cool dog names</h3>
+    <table>
+        <tr>
+            <th>Name</th>
         </tr>
         <tr>
-            <td style = "border: 1px solid black;text-align: left;">Rocket</td>
+            <td>Rocket</td>
         </tr>
         <tr>
-            <td style = "border: 1px solid black;text-align: left;">Bartholomew</td>
+            <td>Bartholomew</td>
         </tr>
         <tr>
-            <td style = "border: 1px solid black;text-align: left;">Luna</td>
+            <td >Luna</td>
         </tr>
         <tr>
-            <td style = "border: 1px solid black;text-align: left;">Helios</td>
+            <td>Helios</td>
         </tr>
     </table> 
    
     <!--Picture of Dog-->   
-    <p> Miniature American Shepherd </p>
-    <img src="https://photos.puppyspot.com/5/listing/621475/photo/5226860_large-resize.jpg" style="width:400px;height:400px" alt="My Favoirte Dog" title="My Favorite Dog">
-    
-
+    <p id="desc"> Miniature American Shepherd </p>
+    <img src="https://photos.puppyspot.com/5/listing/621475/photo/5226860_large-resize.jpg" alt="My Favoirte Dog" title="My Favorite Dog">
+    <p>Check out my website below</p>
+    <br />
+    <a href="https://www.ethandith.com">My Website</a>
+    <br />
+    <br />
     <!--End of Ethan's Section-->   
 
     <hr>
