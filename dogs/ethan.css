@@ -1,10 +1,4 @@
-h4{
-    color: #ab5672
-}
 
-h3{
-   font-weight: bold;
-}
 
 p{
     font-size: 15px;
@@ -14,6 +8,12 @@ p{
 
 span{
     color:rgb(171,86,114)
+}
+
+.reasonsDogs{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
 }
 
 .favDogs {
@@ -27,8 +27,16 @@ table, tr, th, td {
     border-collapse: collapse; 
     width:fit-content;
     border: 2px solid black; 
-    text-align: left;
     font-family: cursive;
+    text-align: center;
+}
+
+#desc{
+    font-size: 30px;
+}
+
+.desc{
+    display: block;
     text-align: center;
 }
 
