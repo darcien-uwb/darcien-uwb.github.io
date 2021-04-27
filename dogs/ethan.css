@@ -35,6 +35,9 @@ table, tr, th, td {
     font-size: 30px;
 }
 
+
+
+
 .desc{
     display: block;
     text-align: center;
@@ -56,4 +59,8 @@ a{
 
 a:hover {
     background-color: grey;
+}
+
+a.desc:hover{
+    background-color:#fcba03;
 }
