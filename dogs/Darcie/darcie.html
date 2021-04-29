@@ -1,84 +1,106 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!--Sample HTML page about dogs-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Team 2: HTML page about dogs</title>
-    </head>
 
-    <body style="font-family:georgia;"> <!-- changed font for entire page [Darcie] -->
-        <header>
-            <h1>
-                Dogs!
-            </h1>
-        </header>
-
-    <!-- start Darcie's Section -->    
-    <hr>
-    <hr>
-
-    <!-- Section Title -->
-    <h4 style="color:rgb(43, 120, 165)"> DARCIE'S SECTION </h4>
+<head>
+  <meta charset="utf-8">
+  <title>Team 2: HTML page about dogs</title>
+  <link rel="stylesheet" href="darcie.css">
+  <style>
+    .center {
+      text-align: center;
+      color: rgb(175, 31, 31);
+    }
     
-    <!-- General text -->
-    <p> I'm really not much of an animal person, but if I had to choose between dogs and cats... <br>
+    li {
+      color: rgb(175, 31, 31);
+    }
+
+    h1:hover {
+      color: rgb(211, 238, 255);
+    }
+    
+    img:hover {
+      border: 5px solid rgb(175, 31, 31);
+    } 
+  </style>
+</head>
+
+<body style="font-family:georgia;">
+  <!-- changed font for entire page [Darcie] -->
+  <header>
+    <h1 class="center">
+      Dogs!
+    </h1>
+  </header>
+
+  <!-- start Darcie's Section -->
+  <hr>
+  <hr>
+
+  <!-- Section Title -->
+  <h4 style="color:rgb(43, 120, 165)"> DARCIE'S SECTION </h4>
+
+  <!-- General text -->
+  <p> I'm really not much of an animal person, but if I had to choose between dogs and cats... <br>
     I'm definitely a <em><strong> dog </strong></em> person. </p>
-    <div> A few reasons why I'm not an animal person: </div>
-    
-    <!-- Unordered List -->
-    <ul>
-        <li> I'm allergic to everything </li>
-        <li> They lick EVERYWHERE then lick you </li>
-        <li> I'm too busy to clean up after them </li>
-    </ul>
-    
-    <!-- Image -->
-    <p> Here's a random dog image I thought was <span style="color:rgb(43, 120, 165)"> amusing</span>:</p>
-    <img src="images/Darcie_dogPic.jpg" width="450" alt="image of a yawning basset hound with fully-extended ears" title="Dumbo dog?" style="border: 5px solid rgb(83, 55, 17);">
-    
-    <!-- Table Title -->
-    <h4 style="color:rgb(43, 120, 165)"> RANDOM SEARCH of DOG NAMES </h4>
-      
-    <!-- start Table -->
-    <table style="border-collapse: collapse; width:fit-content;">
-      <tr style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;">
-        <th style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Most Popular Dog Names </th>
-        <th style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Least Popular Dog Names </th>
-      </tr>
-      <tr style ="background-color: rgba(140, 182, 207, 0.849);">
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Bella </td>
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Bellatrix </td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Luna </td>
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Latte </td>
-      </tr>
-      <tr style ="background-color: rgba(140, 182, 207, 0.849);">
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Charlie </td>
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Melody </td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Lucy </td>
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Linda </td>
-      </tr>
-      <tr style ="background-color: rgba(140, 182, 207, 0.849);">
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Cooper </td>
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Rain </td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Max </td>
-        <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Lucille </td>
-      </tr>
-    </table>
-    <!-- end Table -->
-    
-    <br>
-    <hr>
-    <hr>
-    <!-- end Darcie's Section -->
+  <div> A few reasons why I'm not an animal person: </div>
+
+  <!-- Unordered List -->
+  <ul>
+    <li> I'm allergic to everything </li>
+    <li> They lick EVERYWHERE then lick you </li>
+    <li> I'm too busy to clean up after them </li>
+  </ul>
+
+  <!-- Image -->
+  <p> Here's a random dog image I thought was <span style="color:rgb(43, 120, 165)"> amusing</span>:</p>
+  <img src="images/Darcie_dogPic.jpg" width="450" alt="image of a yawning basset hound with fully-extended ears"
+    title="Dumbo dog?" style="border: 5px solid rgb(83, 55, 17);">
+
+  <!-- Table Title -->
+  <h4 style="color:rgb(43, 120, 165)"> RANDOM SEARCH of DOG NAMES </h4>
+
+  <!-- start Table -->
+  <table style="border-collapse: collapse; width:fit-content;">
+    <tr style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;">
+      <th style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Most Popular Dog Names </th>
+      <th style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Least Popular Dog Names </th>
+    </tr>
+    <tr style="background-color: rgba(140, 182, 207, 0.849);">
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Bella </td>
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Bellatrix </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Luna </td>
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Latte </td>
+    </tr>
+    <tr style="background-color: rgba(140, 182, 207, 0.849);">
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Charlie </td>
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Melody </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Lucy </td>
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Linda </td>
+    </tr>
+    <tr style="background-color: rgba(140, 182, 207, 0.849);">
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Cooper </td>
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Rain </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Max </td>
+      <td style="border: 1px solid rgb(191, 223, 243); text-align: left; padding: 8px;"> Lucille </td>
+    </tr>
+  </table>
+  <!-- end Table -->
+
+  <br>
+  <hr>
+  <hr>
+  <!-- end Darcie's Section -->
 
 
 
 </body>
-</html>
 
+</html>
