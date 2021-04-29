@@ -23,7 +23,7 @@ table, tr, th, td{
     border-collapse: collapse;
     padding: 30px;
     width: fit-content;
-    border:2px deepskyblue;
+    border:10px deepskyblue;
     font-family: initial;
     text-align: center; 
 }
