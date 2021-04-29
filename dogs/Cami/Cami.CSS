@@ -2,28 +2,30 @@
 
 p {
     font-size: 13px;
-    font-family: cursive;
-    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bolder;
+    font-weight: "500;"
 }
 
 span{
     color: deeppink;
 }
 
-.Reasonswhydogsarebetter{
-    font-size: 15px;
+.ReasonsWhy{
+    font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
+    font-style: italic;
 }
 
-table, tr, th, td {
+table, tr, th, td{
     width: auto;
     border-collapse: collapse;
     padding: 30px;
     width: fit-content;
     border:2px deepskyblue;
     font-family: initial;
-    text-align: center;
+    text-align: center; 
 }
 
 #desc{
@@ -34,8 +36,4 @@ img{
     margin-left: 25px;
     width: 500;
     height: 500;
-}
-
-a.desc:hover{
-    color: lavender;
 }
