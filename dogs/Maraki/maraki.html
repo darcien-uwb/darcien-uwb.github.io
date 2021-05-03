@@ -5,18 +5,22 @@
 <head>
   <meta charset="utf-8">
   <title>Team 2: HTML page about dogs</title>
+  <!--Mark Commen: the head tag contains just meta or invisible data about the document. Therefore, div and p tags doesn't belong here as it is something you intend for people to see.-->
   <div class="name">
     <br />
     <a href="https://pm1.narvii.com/6569/becfa13b8960ba6610bf9d15508d5555a92178f6_hq.jpg" class="web">Maraki's section</a>
     <br />
   </div>
   <p>^^I didnt know what to add for hover so I linked one of my favorite react memes</p>
+  <!--Mark Comment: in maraki.css you should add a space between selector and the open curly bracket.-->
   <link rel="stylesheet" href="maraki.css">
+  <!--Mark Comment: it looks like you have a closing style tag here but no opening style tag (nor the contents you'd put in the style block).-->
   </style>
 </head>
 
 <body>
 
+  <!--Mark Comment: try not to use the same name for both a class and an id.-->
   <a href="#desc" class="desc">Take Cute Doggo Survey</a>
   <h2> I don't have any of my own doggos, but I imagine myself owning a pitbull & a doberman....and a dolphin</h2>
 
@@ -62,6 +66,7 @@
       <tr>
         <td style="border: 1px solid black;text-align: left;"><span><em><strong style="color:#FF0000;">Any other dog breed in the Universe (except Chihuahuas)</strong></em></span></td>
       </tr>
+      <!--Mark Comment: careful about nested vs. overlapping tags. You want the closing table tag to come before the closing div tag.-->
   </div>
 
   </table>
@@ -78,6 +83,7 @@
     <p>Which <span style="color:rgb(255,0,0)"> Doggo</span> is the cutest?</p><br />
 
     <!--Adding radio buttons with images-->
+    <!--Mark Comment: add double quotes around attribute values.-->
     <div class="cuties">
       <input type="radio" name="ans" value="Baby German Shepherd">
       <img src="https://i.pinimg.com/originals/b6/55/70/b6557063e8051638b806231e59e072b8.jpg" height=100 width=100>Baby German Shepherd<br />
@@ -103,7 +109,7 @@
       <br />My Doggo: <input type="text" name="Dog"><br />
 
       <input type="submit">
-
+<!--Mark Comment: form after div since it encompasses the div. Also, be sure to look at the debug panel in VSCode and resolve any errors beforing submitting!-->
   </form>
   </div>
 </body>
