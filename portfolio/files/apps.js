@@ -41,7 +41,7 @@ const date = futureDate.getDate();
 // number 0-6
 const weekday = weekdays[futureDate.getDay()];
 
-graduation.textContent = `graduation begins on ${weekday}, ${month} ${date}, ${year} at ${hours}:${minutes}0pm`;
+graduation.textContent = `festivities start ${weekday}, ${month} ${date}, ${year} at ${hours}:${minutes}0pm`;
 
 // future time in ms
 const futureTime = futureDate.getTime();
@@ -49,7 +49,6 @@ const futureTime = futureDate.getTime();
 function getRemainingTime() {
     const today = new Date().getTime();
     const t = futureTime - today;
-    console.log(t);
 
     // 1s = 1000ms
     // 1m = 60s
@@ -61,14 +60,14 @@ function getRemainingTime() {
     const oneHour = 60*60*1000;
     const oneMinute = 60*1000;
 
-    //calculate all values
+    // calculate all values
     let days = t / oneDay;
     days = Math.floor(days);
     let hours = Math.floor((t % oneDay) / oneHour);
     let minutes = Math.floor((t % oneHour) / oneMinute);
     let seconds = Math.floor((t % oneMinute) / 1000);
 
-    // values array;
+    // set values array;
     const values = [days,hours,minutes,seconds];
 
     function format(item) {
@@ -81,8 +80,13 @@ function getRemainingTime() {
     items.forEach(function(item, index) {
         item.innerHTML = format(values[index]);
     });
+    if(t < 0) {
+        clearInterval(countdown);
+        deadline.innerHTML = `<h4 class = "expired">Sorry, you've missed graduation</h4>`;
+    }
 
 }
 // countdown
-let countdown = setInterval()
+let countdown = setInterval(getRemainingTime, 1000);
+
 getRemainingTime();

@@ -65,6 +65,14 @@
       height: 80%;
       margin: auto;
     }
+
+    .center {
+      text-align: center;
+    }
+
+    h4.number {
+      font-weight: bolder;
+    }
   </style>
 </head>
 
@@ -81,6 +89,7 @@
       <li class="nav-item"><a class="nav-link" href="#annotatedbib">[ annotated bibliography ]</a></li>
       <li class="nav-item"><a class="nav-link" href="#essay">[ essay ] </a></li>
       <li class="nav-item"><a class="nav-link" href="#poster">[ poster ]</a></li>
+      <li class="nav-item"><a class="nav-link" href="#grad">[ graduation ]</a></li>
     </ul>
   </nav>
 
@@ -381,9 +390,7 @@
   </div>
   <!-- end Mini Portfolios -->
 
-  <!-- start Annotated Bibliography -->
-
-  <!-- Annotated Bibliography Carousel -->
+  <!-- start Annotated Bibliography Carousel -->
   <div id="annotatedbib">
     <div class="container-fluid p-3 my-5 bg-light">
       <div class="col-12">
@@ -793,70 +800,79 @@
   </div>
   <!-- end Poster -->
 
+
   <!-- Countdown to Graduation clock -->
-  <section class="section-center">
+  <div id="grad">
+    <div class="container-fluid p-3 my-5 bg-light">
+      <br>
+      <section class="section-center">
 
-    <!-- image -->
-    <article class="graduation-img">
-      <img src="images/graduation.png" alt="UW graduation picture">
-    </article>
+        <div class="row">
+          <div class="col-7">
+            <!-- image -->
+            <article class="graduation-img">
+              <img src="images/graduation.png" class="img-fluid mx-auto d-block rounded mb-5" style="width: 90%"
+                alt="UW graduation picture">
+            </article>
+          </div>
 
-    <!-- info -->
-    <article class="graduation-info">
-      <h3>graduation countdown</h3>
-      <h4 class="graduation">graduation happens on Sunday, 13 June at 1pm</h4>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam optio consectetur, in autem, quae officiis
-        perspiciatis soluta quis iste ex quos. At velit deleniti consequuntur accusamus, aspernatur necessitatibus culpa
-        ullam!</p>
 
-      <div class="deadline">
-        <!-- days -->
-        <div class="deadline-format">
-          <div>
-            <h4 class="days">34</h4>
-            <span>days</span>
+          <div class="col-5">
+            <!-- info -->
+            <article class="graduation-info">
+              <h2 class="text-danger">UWB graduation countdown</h2>
+              <h5 class="graduation">
+                </h5>
+                <p></p>
+
+                <div class="deadline d-flex flex-wrap align-content-center mb-3">
+                  <!-- days -->
+                  <div class="deadline-format p-4 bg-info rounded center border border-white">
+                    <div>
+                      <h4 class="days number text-white"></h4>
+                      <span>days</span>
+                    </div>
+                  </div>
+                  <!-- end of days -->
+
+                  <!-- hours -->
+                  <div class="deadline-format p-4 bg-info rounded center border border-white">
+                    <div>
+                      <h4 class="hours number text-white"></h4>
+                      <span>hours</span>
+                    </div>
+                  </div>
+                  <!-- end of hours -->
+
+                  <!-- mins -->
+                  <div class="deadline-format p-4 bg-info rounded center border border-white">
+                    <div>
+                      <h4 class="mins number text-white"></h4>
+                      <span class="">mins</span>
+                    </div>
+                  </div>
+                  <!-- end of mins -->
+
+                  <!-- seconds -->
+                  <div class="deadline-format p-4 bg-info rounded center border border-white">
+                    <div>
+                      <h4 class="seconds number text-white"></h4>
+                      <span>secs</span>
+                    </div>
+                  </div>
+                  <!-- end of seconds -->
+
+                </div>
+            </article>
+
+
+
+
           </div>
         </div>
-        <!-- end of days -->
-
-        <!-- hours -->
-        <div class="deadline-format">
-          <div>
-            <h4 class="hours">34</h4>
-            <span>hours</span>
-          </div>
-        </div>
-        <!-- end of hours -->
-
-        <!-- mins -->
-        <div class="deadline-format">
-          <div>
-            <h4 class="mins">34</h4>
-            <span>mins</span>
-          </div>
-        </div>
-        <!-- end of mins -->
-
-        <!-- seconds -->
-        <div class="deadline-format">
-          <div>
-            <h4 class="seconds">34</h4>
-            <span>seconds</span>
-          </div>
-        </div>
-        <!-- end of seconds -->
-
-      </div>
-    </article>
-
-
-
-
-
-
-  </section>
-
-
+      </section>
+    </div>
+  </div>
 
 
   <!-- JavaScript script -->
@@ -873,297 +889,3 @@
 </body>
 
 </html>
-
-
-
-<!--  alternative AB  
-  <div id="annotatedbib"> 
-    <div class="container-fluid p-3 my-5 bg-light">
-      <div class="col-12">
-        <br>
-        <h1 class="mt-4 text-danger">annotated bibliography</h1>
-        <h6 class="subtitle text-info">The most significant work from my time in IAS</h6>
-        <hr class="mb-5">
-      </div>
-
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <a href="files/dataDashboardpdf.pdf" target="_blank">
-            <img src="images/dataDashboard.png" class="img-thumbnail  border-info float-right" style="width: 70%"
-              alt="Data Dashboard: Project Proposal">
-          </a>
-        </div>
-        <br>
--->
-
-<!-- DD Project Proposal -->
-<!--
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie. “Data Dashboard: Project Proposal.” BIS 493 Advanced Data
-            Visualization. Winter 2021.</h5>
-
-          <p class="text">In this paper, Nelson develops a proposal for a data dashboard project. Using a data set
-            from Law
-            Enforcement Management and Administrative Statistics (LEMAS), Nelson explores the claim “Do the
-            demographics of area law enforcement agencies reflect proportionally to that of the population they
-            serve?” She includes a description of the project, a project plan outlining task due dates, background
-            information about the data set, expected outcomes for the project, and a mockup sketch of the data
-            interface.</p>
-
-          <p class="text">My intent for including this document as an artifact is to illustrate my skill in
-            creating a
-            comprehensive project proposal. This proposal demonstrates my style of writing and my abilities to
-            both
-            conduct research and create professional-looking mockups.</p>
-        </div>
-      </div>
-      <br>
--->
-<!-- DD -->
-<!--
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <a href="https://darcienelson.shinyapps.io/PolicePopulationRace/" target="_blank">
-            <img src="images/dashboard.png" class="img-thumbnail border-info float-right" style="width: 70%"
-              alt="Data Dashboard">
-          </a>
-        </div>
-
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie. <em>Data Dashboard: Racial Demographics of Police and Population in
-              the
-              United
-              States</em>.
-            BIS 493 Advanced Data Visualization. Winter 2021.</h5>
-          <p class="text">In this project, Nelson creates a data dashboard to explore the claim “Do the demographics
-            of area
-            law
-            enforcement agencies reflect proportionally to that of the population they serve?” Using R (a
-            statistical programming language), Nelson develops an interactive web-based site allowing users to
-            explore trends in the racial demographics of local police forces and the populations they serve. She
-            includes bar charts comparing demographics from 2007 and 2016, and scatterplots to determine if the
-            race
-            of the police force is representative of the race of the population.</p>
-
-          <p class="text">I chose to include this project as I am really proud of the finished project. I started
-            the term
-            feeling
-            a
-            bit overwhelmed and lacking in both my R language and GitHub skills, yet I was able to overcome my
-            hesitation and create a dashboard that is interesting, provokes thinking, and informative.</p>
-        </div>
-      </div>
-      <br>
--->
-<!-- Racial Hierarchy -->
-<!--
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <a href="files/racialHierarchy.pdf" target="_blank">
-            <img src="images/racialHierarchy.png" class="img-thumbnail border-info float-right" style="width: 70%"
-              alt="How Racial Hierarchy is Challenged in The Letter">
-          </a>
-        </div>
-
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie. “How Racial Hierarchy is Challenged in <em>The Letter</em>.” BIS 372
-            Representation, Colonialism, and the Tropical World. Autumn 2020.</h5>
-          <p class="text">In this paper, Nelson analyzes representations of tropical Asia using two specific scenes
-            from William Wyler’s film, <em>The Letter</em> (1940). Including references from several texts, Nelson
-            examines the
-            concepts of orientalism and “the Other”. She analyzes scenes between a White lawyer and his Asian
-            assistant, as well as the White main character’s experience in the Chinese Quarter.</p>
-
-          <p class="text">Having lived in this region for the better part of nine years, I chose this paper because I
-            have a personal connection to the land and its people.</p>
-        </div>
-      </div>
-      <br>
--->
-<!-- Mental Mapping -->
-<!--
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <a href="files/mentalMap.pdf" target="_blank">
-            <img src="images/mentalMap.png" class="img-thumbnail border-info float-right" style="width: 70%"
-              alt="Mental Mapping of Your Home Community">
-          </a>
-        </div>
-
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie. “Mental Mapping of Your Home Community." BIS 218 The Power of Maps.
-            Autumn 2020.</h5>
-          <p class="text">In this project, Nelson creates a geo-visual representation of her chosen home community of
-            the Columbia City neighborhood in Seattle, WA. She chooses which data to use, specifies why they are an
-            important part of her home community, and determines how to represent that data. Rather than creating a
-            cartographic reference map, she hand draws a map as she envisions it, incorporating data that instill
-            special memories for her.</p>
-
-          <p class="text">This project is an important example of my ability to think critically and creatively. It
-            required me to reflect on the period when I lived there and communicate that message in a visual medium.
-          </p>
-        </div>
-      </div>
-      <br>
--->
-<!-- Socially Engaged Mapping -->
-<!--
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <a href="files/sociallyEngagedMap.pdf" target="_blank">
-            <img src="images/sociallyEngagedMap.png" class="img-thumbnail border-info float-right" style="width: 70%"
-              alt="Socially Engaged Mapping of Home Community">
-          </a>
-        </div>
-
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie. “Socially Engaged Mapping of Home Community.” BIS 218 The Power of
-            Maps. Autumn 2020.</h5>
-          <p class="text">In this piece, Nelson employs two distinct census data variables to generate two unique
-            atlases of her home community. She focuses on using elements of map generalization, data classification,
-            map symbolization and abstraction to create her finished piece. The maps highlighted a key finding
-            indicating private high schools in the Columbia City neighborhood were populated by students
-            overwhelmingly from “White Alone” areas, “Black Alone” areas populated public high school, and “Asian
-            Alone” students attended both public and private high schools.</p>
-
-          <p class="text">I chose to include this paper as an artifact because it showcases my capabilities in
-            creating maps using Social Explorer as well as my abilities to think critically about maps by performing
-            readings, analyses and interpretations of both maps.</p>
-        </div>
-      </div>
-      <br>
--->
-<!-- Wyoming -->
-<!--
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <a href="files/wyoming.pdf" target="_blank">
-            <img src="images/wyoming.png" class="img-thumbnail border-info float-right" style="width: 70%"
-              alt="Making Wyoming Renewable">
-          </a>
-        </div>
-
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie, et al. <em>Making Wyoming Renewable</em>. BIS 300 Interdisciplinary
-            Inquiry.
-            Spring 2019.</h5>
-          <p class="text">In this group presentation, Nelson assesses Wyoming’s potential of becoming a renewable
-            state by focusing on drawdown solutions, potential barriers, equity of impacts, and proposal feasibility.
-            Ultimately, the team determines that Wyoming is coal and cow country, making it incredibly challenging to
-            become a renewable state.</p>
-
-          <p class="text">Completed during my first quarter at UWB , this project signifies the start of my journey in
-            obtaining a degree in Mathematical Thinking and Visualization. I recall working with strong personalities
-            and missed deadlines, both providing some obstacles as my role included creating the presentation, but we
-            were able to overcome our differences and produced a great final project. Looking back, there are some
-            items I could improve, but overall, it was a great introduction to UWB.</p>
-        </div>
-      </div>
-      <br>
--->
-<!-- SMALS -->
-<!--
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <p class="text text-right"><strong>On-going research project</strong></p>
-
-        </div>
-
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie, et al. <em>Student-made Models Analyzed on a Large Scale (SMALS)</em>.
-            Dr.
-            Caleb Trujillo. Summer 2020 – Spring 2021.</h5>
-          <p class="text">In the capacity of research assistant, Nelson creates and analyzes concept models to better
-            understand students’ understanding of cognitive connections. She transcribes concept models using CMAP
-            tools and analyzes network data using R. Findings from the project may ultimately be used to recommend
-            educational changes. </p>
-
-          <p class="text">This artifact is significant as it highlights my experience with interdisciplinary research.
-          </p>
-        </div>
-      </div>
-      <br>
--->
-<!-- Spider-Man vs Batman -->
-<!--
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <a href="files/spiderman.pdf" target="_blank">
-            <img src="images/spiderman.png" class="img-thumbnail border-info float-right" style="width: 70%"
-              alt="Spider-Man vs. Batman">
-          </a>
-        </div>
-
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie, et al. <em>Spider-Man vs. Batman</em>. B IMD 250 Introduction to
-            Interaction
-            Design. Winter 2020.</h5>
-          <p class="text">In this document, Nelson incorporates the “Spider-Man vs. Batman” theme for a pop-up exhibit
-            into a design concept report outlining the individual elements of the project. All team members
-            contributed to the text and visuals. Nelson created a comic book-style layout for the report to add
-            continuity with the museum design.</p>
-
-          <p class="text">I included this document as a demonstration of my skills regarding layout design and
-            balance. The cover includes title fonts reminiscent of vintage comic books and showcases the colors used
-            throughout the report. The inside pages are clean, interesting, easy to navigate, and informative.</p>
-        </div>
-      </div>
-      <br>
--->
-<!-- Internship Credits -->
-<!--
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <a href="files/internshipCredits.pdf" target="_blank">
-            <img src="images/internshipCredits.png" class="img-thumbnail border-info float-right" style="width: 70%"
-              alt="The Impact of Internship Credits on Student Success Varies
-                Across Schools">
-          </a>
-        </div>
-
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie, et al. “The Impact of Internship Credits on Student Success Varies
-            Across Schools.” BIS 232 Introduction to Data Visualization. Autumn 2019.</h5>
-          <p class="text">In this group paper, Nelson and her colleagues study High-Impact Practices data from UWB,
-            and determine the impact one of those practices, namely internship credits, has on student success across
-            different schools at UWB. The paper focuses primarily on the schools of IAS and Business at UWB and
-            determining if there is a correlation between the quantity of internship credits taken by undergraduate
-            students and their exit GPA. Visualizations produced in R indicate students taking internship credits in
-            the school of Business had a lower exit GPA, whereas the students in the school of IAS had a higher exit
-            GPA.</p>
-
-          <p class="text">I included this document as it was the first group paper I was involved with that I thought
-            was worthy of being published. Our team worked really well together, we all learned many new things, and
-            we strove to do our best. I am very proud of the finished product.</p>
-        </div>
-      </div>
-      <br>
--->
-<!-- White Anti-Racism Project -->
-<!--
-      <div class="row">
-        <div class="col-md-4 align-self-md-start">
-          <a href="https://sites.uw.edu/comlab/" target="_blank">
-            <img src="images/comLab.png" class="img-thumbnail border-info float-right" style="width: 70%"
-              alt="The White Anti-Racism Project">
-          </a>
-        </div>
-
-        <div class="col-md-8">
-          <h5 class="text-info">Nelson, Darcie, et al. <em>The White Anti-Racism Project</em>. Dr. Charlie Collins.
-            BIS 498 Undergraduate Research. Sep. 2019 – June 2020.</h5>
-          <p class="text">In her role as research assistant, Nelson studies the impact of educating members of the
-            White community who strive to be allies to their non-White counterparts. By creating a survey to be
-            distributed to leaders, activists, and accomplices of the racial justice movement in the greater Seattle
-            region, she gathers data to help understand and potentially implement social change.</p>
-
-          <p class="text">My intent for including this position as an artifact is to show my dedication toward
-            creating a more just world. After working in this capacity for nine months I have a better understanding
-            of the importance of both diversity and inclusion.</p>
-        </div>
-      </div>
-      <br>
-
-    </div>
-  </div>
--->
